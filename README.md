@@ -8,7 +8,8 @@ I am a data analyst with experience using real-time data to foster informative d
 
 Below, I will showcase projects that display my data analysis skills and my process of extracting, cleaning, analyzing, and visualizing the datasets.
 
-## CSULB Student Review's Sentiment Analysis
+## CSULB Student Review's Sentiment Analysis 
+## Repo: https://github.com/csulb-datascience/Sentiment-Analysis-for-RateMyProfessor
 ### Summary
 
 The goal of this project was to extract all reviews of professors at California State University Long Beach from 1999-2023 and find out which attributes (grade, quality rating, etc.) correlated to positive or negative student reviews analyzed by each college. After the reviews were collected and the dataset was cleaned, sentiment analysis was performed on each review to classify each review as negative, neutral, or positive. Conclusions and visualizations were created which I will expand in more detail about the complete process below.
