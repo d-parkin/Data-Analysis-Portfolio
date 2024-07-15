@@ -59,6 +59,8 @@ The most significant challenge I faced was after collecting all the reviews, I n
 
 To collect the required student review data I used the following api: https://github.com/Nobelz/RateMyProfessorAPI and the Python package Selenium to extract the elements I was looking for. I used the xpath of the element on the page to tell the script what to extract and stored all these attributes and instructors in a MySQL database. I then extracted the database into a CSV so I could clean the data easier and manage it in Excel.
 
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/06dbb53d-0a07-492b-a36c-74beff20baf4" alt="Description of image" width="45%" style="display: inline-block;">
+</p>
 
 ### PowerBI Interactive Dashboard
