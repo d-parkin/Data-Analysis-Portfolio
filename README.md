@@ -52,15 +52,23 @@ Below, the p-values are both less than 0.05 which means I can reject the null hy
 The most significant challenge I faced was after collecting all the reviews, I noticed that the same professor would have more than one entry because students either mispelled their name or they taught courses in slightly different departments. To resolve this issue, I combined two string distance metrics (Levenshtein and Jaro-Winkler) to perform name matching (done in Python) and create a mapping table (a CSV manipulated in Excel) that I used to match reviews that pertained to the same professor using their instructorIDs. My mapping table consists of over 250 paired professors.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a1bd5f1f-4d47-4233-ae50-f9d5c4211591" alt="Description of image" width="45%" style="display: inline-block;">
+  <img src="https://github.com/user-attachments/assets/a1bd5f1f-4d47-4233-ae50-f9d5c4211591" alt="Description of image" width="90%" style="display: inline-block;">
 </p>
 
 ### Data Collection and Preparation
 
-To collect the required student review data I used the following api: https://github.com/Nobelz/RateMyProfessorAPI and the Python package Selenium to extract the elements I was looking for. I used the xpath of the element on the page to tell the script what to extract and stored all these attributes and instructors in a MySQL database. I then extracted the database into a CSV so I could clean the data easier and manage it in Excel.
+To collect the required student review data I used the following api: https://github.com/Nobelz/RateMyProfessorAPI and the Python package Selenium to extract the elements I was looking for. I used the xpath of the element on the page to tell the script what to extract and stored all these attributes and instructors in a MySQL database. I then extracted the database into a CSV for cleansing the dataset and managing it in Excel.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/06dbb53d-0a07-492b-a36c-74beff20baf4" alt="Description of image" width="45%" style="display: inline-block;">
+  <img src="https://github.com/user-attachments/assets/06dbb53d-0a07-492b-a36c-74beff20baf4" alt="Description of image" width="90%" style="display: inline-block;">
 </p>
 
+To prepare my data for creating visualizations using Minitab and PowerBI I needed to organize my data by college, aggregate the dates into years and remove duplicate or mispelled majors (ex. Computer Science and ComputerScience need to be one major). To accomplish this, I created pivot tables in Excel for each college that I could use to create visualizations of the data as seen above.
+
 ### PowerBI Interactive Dashboard
+
+Below is a dashboard I created that makes use of a slicer to give insights and analyze snapshots of the data between different dates (top right).
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e98d43a5-6118-4d48-ab58-75b3dc88481a" alt="Description of image" width="90%" style="display: inline-block;">
+</p>
